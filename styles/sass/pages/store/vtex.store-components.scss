@@ -1,0 +1,406 @@
+.container {
+  @include mq(md, max) {
+    padding: 0;
+    margin: 0 40px;
+  }
+  .productBrand {
+    display: flex;
+    justify-content: flex-end;
+    @include mq(md, max) {
+      justify-content: flex-start;
+    }
+  }
+
+  .productBrand--quickview {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 34px;
+    margin-top: 0px;
+    color: $color-gray7;
+  }
+
+  .skuSelectorContainer {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .skuSelectorName {
+      font-size: 0;
+    }
+
+    .skuSelectorNameSeparator {
+      font-size: 0;
+    }
+
+    .skuSelectorSubcontainer--cor {
+      &::before {
+        content: "OUTRAS CORES:";
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        line-height: 19px;
+        font-size: 14px;
+        color: $color-gray6;
+      }
+    }
+
+    .skuSelectorSubcontainer--tamanho {
+      &::before {
+        content: "OUTROS TAMANHOS:";
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        line-height: 19px;
+        font-size: 14px;
+        color: $color-gray6;
+      }
+    }
+
+    .skuSelectorTextContainer {
+      display: none;
+    }
+
+    .skuSelectorOptionsList {
+      margin-top: 8px;
+      margin-left: 0;
+    }
+
+    .skuSelectorSelectorImageValue {
+      font-size: 0;
+    }
+  }
+
+  .skuSelectorOptionsList {
+    .skuSelectorItem {
+      width: 40px;
+      height: 40px;
+    }
+    .skuSelectorItem--selected {
+      color: $color-black;
+    }
+
+    .frameAround {
+      border-radius: 50%;
+      border-color: $color-black;
+      margin: 3px;
+    }
+
+    .skuSelectorItemTextValue {
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      color: $color-black;
+    }
+
+    .diagonalCross {
+      margin: 4px;
+      background-image: linear-gradient(
+        to top left,
+        transparent 44%,
+        rgba(0, 0, 0, 0.3) 48%,
+        currentColor 48%,
+        currentColor 52%,
+        transparent 52%
+      );
+    }
+
+    .skuSelectorInternalBox {
+      border-radius: 50%;
+      .valueWrapper {
+        color: $color-black;
+      }
+    }
+  }
+
+  .carouselGaleryThumbs {
+    @include mq(sm, max) {
+      display: block;
+    }
+    .thumbImg {
+      border-radius: 8px;
+      width: 90px;
+      height: 90px;
+    }
+    .productImagesThumb {
+      height: 100% !important;
+      width: 90px !important;
+      margin-right: 16px;
+    }
+
+    .productImagesThumbCaret {
+      display: none;
+    }
+  }
+
+  .subscriberContainer {
+    .title {
+      font-size: 0;
+      &::before {
+        content: "Produto indisponível";
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        color: $color-gray8;
+        line-height: 19px;
+      }
+    }
+
+    .subscribeLabel {
+      font-size: 0;
+      &::before {
+        content: "Deseja saber quanto estiver disponível?";
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        color: $color-gray8;
+        line-height: 19px;
+      }
+    }
+  }
+  .form {
+    position: relative;
+    :global(.vtex-store-components-3-x-content) {
+      max-width: 100%;
+      :global(.vtex-store-components-3-x-submit) {
+        :global(.vtex-button) {
+          width: 100%;
+          background-color: $color-black;
+          border: 0;
+          :global(.vtex-button__label) {
+            font-size: 0;
+            padding-top: 12px !important;
+            padding-bottom: 12px !important;
+            &::before {
+              content: "AVISE-ME";
+              font-family: "Open sans", sans-serif;
+              font-size: 18px;
+              color: $color-white;
+              font-weight: 600;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+    .content {
+      .inputEmail {
+        margin-right: 0;
+      }
+      .submit {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+      }
+    }
+  }
+
+  .productImage {
+    .productImageTag--main {
+      max-height: 100% !important;
+    }
+  }
+  .productDescriptionContainer {
+    color: $color-gray6;
+    .productDescriptionTitle {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      margin: 0px 0 8px 40px;
+      @include mq(md, max) {
+        margin-left: 0;
+        margin-top: 16px;
+      }
+    }
+    .productDescriptionText {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      .content {
+        margin-left: 40px;
+        @include mq(md, max) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.shippingContainer {
+  display: flex;
+  @include mq(sm, max) {
+    display: block;
+    position: relative;
+  }
+  :global(.vtex-address-form__postalCode) {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-top: 16px;
+    @include mq(sm, max) {
+      display: block;
+    }
+    :global(.vtex-input__label) {
+      font-size: 0;
+      &::before {
+        content: "CALCULAR FRETE";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: $color-gray6;
+      }
+    }
+    :global(.vtex-input-prefix__group) {
+      width: 280px;
+      height: 49px;
+      border-radius: 0;
+      @include mq(sm, max) {
+        width: 100%;
+      }
+    }
+    :global(.vtex-address-form__postalCode-forgottenURL) {
+      padding: 0;
+      margin-top: 25px;
+      position: relative;
+      left: 32px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      text-decoration: underline;
+      @include mq(sm, max) {
+        left: 0;
+        margin-top: 8px;
+        text-align: end;
+      }
+      :last-child {
+        color: $color-black;
+      }
+      :global(.vtex__icon-external-link) {
+        display: none;
+      }
+    }
+  }
+  :global(.vtex-button) {
+    height: 49px;
+    width: 49px;
+    margin-top: 27px;
+    position: relative;
+    right: 130px;
+    top: 16px;
+    font-size: 0;
+    border-radius: 0;
+    cursor: pointer;
+
+    @include mq(sm, max) {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    &::before {
+      content: "OK";
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      color: $color-white;
+    }
+  }
+}
+.shippingTable {
+  border: none;
+  padding: 0;
+  margin: 15px 0;
+  .shippingTableHead {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    .shippingTableRow {
+      display: flex;
+      flex-direction: row;
+      .shippingTableHeadDeliveryName {
+        margin-right: 39px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: $color-black;
+        @include mq(sm, max) {
+          margin-right: 32px;
+        }
+      }
+
+      .shippingTableHeadDeliveryEstimate {
+        display: flex;
+        order: 1;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: $color-black;
+      }
+
+      .shippingTableHeadDeliveryPrice {
+        font-size: 0;
+        margin-right: 30px;
+        @include mq(sm, max) {
+          margin-right: 32px;
+        }
+        &::before {
+          content: "Frete";
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          color: $color-black;
+        }
+      }
+    }
+  }
+}
+.shippingTableBody {
+  .shippingTableRow {
+    display: flex;
+    flex-direction: row;
+    .shippingTableCellDeliveryName {
+      width: 82px;
+      margin-right: 28px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: $color-gray10;
+      @include mq(sm, max) {
+        margin-right: 22px;
+      }
+    }
+
+    .shippingTableCellDeliveryEstimate {
+      display: flex;
+      order: 1;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: $color-gray10;
+    }
+
+    .shippingTableCellDeliveryPrice {
+      width: 50px;
+      margin-right: 28px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: $color-gray10;
+    }
+    .shippingTableCell {
+      padding: 0 0 15px;
+      .shippingTableLabel {
+        .shippingTableRadioBtn {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.imageElement {
+  @include mq(md, max) {
+    width: 100%;
+  }
+}

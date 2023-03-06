@@ -1,0 +1,38 @@
+$color-black: #000;
+$color-black-100: #292929;
+
+$color-white: #fff;
+
+$color-gray: #6c6c6c;
+$color-gray2: #7d7d7d;
+$color-gray3: #f0f0f0;
+$color-gray4: #c4c4c4;
+$color-gray5: #e5e5e5;
+$color-gray6: #929292;
+$color-gray7: #575757;
+$color-gray8: #868686;
+$color-gray9: #b9b9b9;
+$color-gray10: #bababa;
+$color-gray11: #bfbfbf;
+
+$color-blue: #4267b2;
+
+$color-green: #4caf50;
+
+/* Grid breakpoints */
+$grid-breakpoints: (
+  xs: 0,
+  cstm: 375,
+  sm: 768px,
+  md: 1024px,
+  lg: 1920px,
+  xl: 2500px,
+) !default;
+
+$z-index: (
+  level1: 5,
+  level2: 10,
+  level3: 15,
+  level4: 20,
+  level5: 25,
+) !default;

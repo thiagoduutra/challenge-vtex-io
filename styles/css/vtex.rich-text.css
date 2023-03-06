@@ -1,0 +1,94 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Grid breakpoints */
+.heading {
+  margin: 16px 0 8px 0;
+}
+
+.wrapper--message-newsletter {
+  margin-top: 16px;
+}
+.wrapper--message-newsletter .paragraph--message-newsletter {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.paragraph {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #929292;
+  line-height: 24px;
+  font-weight: 400;
+}
+@media only screen and (max-width: 767px) {
+  .paragraph {
+    font-size: 16px;
+  }
+}
+
+.container--title-newsletter {
+  justify-content: center;
+  width: 100%;
+  margin: 32px 0 16px 0;
+  padding: 0 40px;
+}
+@media only screen and (max-width: 1023px) {
+  .container--title-newsletter {
+    margin: 64px 0 16px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container--title-newsletter {
+    padding: 0;
+  }
+}
+.container--title-newsletter .wrapper--title-newsletter {
+  align-items: center;
+}
+.container--title-newsletter .wrapper--title-newsletter .paragraph--title-newsletter {
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  color: #fff;
+}
+
+.wrapper--email-phrase-newsletter {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0 40px;
+}
+@media only screen and (max-width: 767px) {
+  .wrapper--email-phrase-newsletter {
+    padding: 0;
+  }
+}
+.wrapper--email-phrase-newsletter .wrapper--email-phrase-newsletter {
+  display: flex;
+  align-items: center;
+}
+.wrapper--email-phrase-newsletter .wrapper--email-phrase-newsletter .paragraph--email-phrase-newsletter {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #929292;
+}
+@media only screen and (max-width: 1023px) {
+  .wrapper--email-phrase-newsletter .wrapper--email-phrase-newsletter .paragraph--email-phrase-newsletter {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

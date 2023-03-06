@@ -1,0 +1,82 @@
+.flexRowContent--container-main {
+  display: flex;
+  padding: 0;
+  @include mq(lg, max) {
+    padding: 0 40px;
+  }
+  @include mq(md, max) {
+    display: block;
+    padding: 0;
+  }
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    padding: 0;
+    @include mq(md, max) {
+      width: 100% !important;
+    }
+    :global(.vtex-flex-layout-0-x-flexCol--description-main) {
+      margin-left: 32px;
+      @include mq(md, max) {
+        margin-left: 0;
+      }
+    }
+
+    :global(.vtex-button) {
+      background-color: $color-black;
+      border: none;
+      :global(.vtex-button__label) {
+        height: fit-content;
+        :global(.vtex-add-to-cart-button-0-x-buttonDataContainer) {
+          font-size: 0;
+          &::after {
+            font-family: "Open sans", sans-serif;
+            content: "ADICIONAR À SACOLA";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.flexRow--container-price-slider {
+  display: flex;
+  justify-content: center;
+}
+
+.flexRowContent--product-description {
+  @include mq(md, max) {
+    display: block;
+  }
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    @include mq(md, max) {
+      width: 100% !important;
+      display: block;
+    }
+  }
+}
+.flexRow--product-description {
+  :global(.vtex-store-components-3-x-container) {
+    @include mq(md, max) {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }
+}
+.flexRow--container-newsletter {
+  margin-top: 64px;
+  width: 100%;
+  background-color: $color-black;
+  .flexRowContent--container-newsletter {
+    display: flex;
+    flex-direction: column;
+    .stretchChildrenWidth {
+      width: 100% !important;
+    }
+    .flexRowContent--text-newsletter {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Grid breakpoints */
+.newsletterForm--container-newsletter {
+  display: flex;
+  width: 60% !important;
+  background-color: #000;
+  position: relative;
+  margin-bottom: 16px;
+}
+@media only screen and (max-width: 1023px) {
+  .newsletterForm--container-newsletter {
+    width: 100% !important;
+  }
+}
+
+.emailInputContainer {
+  border-bottom: 1px solid #929292;
+}
+.emailInputContainer :global(.vtex-input-prefix__group) {
+  border: none;
+}
+.emailInputContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+  background-color: transparent;
+}
+
+.formSubmitContainer {
+  height: 40px;
+  border-bottom: 3px solid #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.formSubmitContainer :global(.vtex-button) {
+  background-color: transparent;
+  border: none;
+}
+.formSubmitContainer :global(.vtex-button) :global(.vtex-button__label) {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 0 16px 13px 16px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.defaultSuccessMessage {
+  color: #fff;
+  margin: 0 0 16px 0;
+  text-align: center;
+}

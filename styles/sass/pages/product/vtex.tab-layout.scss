@@ -1,0 +1,38 @@
+.container {
+  margin: 0 40px;
+  .listContainer {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid $color-gray10;
+    @include mq(md, max) {
+      display: flex;
+      flex-direction: column;
+    }
+    .listItem {
+      margin: 0;
+      padding: 0;
+      :global(.vtex-button) {
+        background-color: transparent;
+        border: none;
+        color: $color-gray11;
+        :global(.vtex-button__label) {
+          font-family: "Open Sans", sans-serif;
+          font-size: 18px;
+          line-height: 38px;
+          font-weight: 400;
+          text-transform: capitalize;
+          @include mq(md, max) {
+            padding-left: 0;
+          }
+          &:hover {
+            color: $color-black;
+            border-bottom: 1px solid $color-black;
+            @include mq(md, max) {
+              border: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

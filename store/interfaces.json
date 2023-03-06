@@ -1,0 +1,13 @@
+{
+  "example-component": {
+    "component": "Example"
+  },
+  "html": {
+    "component": "html",
+    "composition": "children"
+  },
+  "productText-component":{
+    "component":"ProductText",
+    "render":"client"
+  }
+}

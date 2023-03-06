@@ -1,0 +1,42 @@
+.quantitySelectorContainer {
+  margin-bottom: 0;
+  margin-right: 16px;
+  @include mq(sm, max) {
+    margin-bottom: 8px;
+  }
+  :global(.vtex-numeric-stepper__input) {
+    height: 49px;
+    width: 31px;
+    font-size: 16px;
+    line-height: 22px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid $color-gray4;
+    border-bottom: 1px solid $color-gray4;
+    color: $color-gray6;
+  }
+  :global(.vtex-numeric-stepper__plus-button) {
+    height: 49px;
+    font-size: 16px;
+    line-height: 22px;
+    border-right: 1px solid $color-gray4;
+    border-bottom: 1px solid $color-gray4;
+    border-top: 1px solid $color-gray4;
+    background: $color-white;
+    color: $color-black;
+  }
+  :global(.vtex-numeric-stepper__minus-button) {
+    height: 49px;
+    width: 10px;
+    font-size: 16px;
+    line-height: 22px;
+    border-left: 1px solid $color-gray4;
+    border-bottom: 1px solid $color-gray4;
+    border-top: 1px solid $color-gray4;
+    background: $color-white;
+    color: $color-black;
+  }
+  .quantitySelectorTitle {
+    display: none;
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["/store/**/*.json", "/store/**/*.jsonc"],
+
+      "schema": {
+        "type": "object",
+        "title": "html",
+        "properties": {
+          "html": {
+            "type": "object",
+            "description": "The name of the entry",
+            "properties": {
+              "props": {
+                "properties": {
+                  "tag": {
+                    "enum": [
+                      "section",
+                      "div",
+                      "span",
+                      "p",
+                      "h1",
+                      "h2",
+                      "h3",
+                      "h4",
+                      "h5",
+                      "h6",
+                      "artigle",
+                      "aside",
+                      "details",
+                      "figcaption",
+                      "figure",
+                      "footer",
+                      "header",
+                      "main",
+                      "mark",
+                      "nav",
+                      "summary",
+                      "time",
+                      "wbr",
+                      "address",
+                      "blockquote",
+                      "dd",
+                      "dl",
+                      "dt",
+                      "fieldset",
+                      "hr",
+                      "li",
+                      "ol",
+                      "pre",
+                      "ul"
+                    ],
+                    "type": "string",
+                    "description": "Tag HTML que sera usada para renderizar o componente.",
+                    "default": "div"
+                  },
+                  "testId": {
+                    "type": "string",
+                    "description": "Id para ser usado nos testes automatizados"
+                  },
+                  "blockClass": {
+                    "type": ["string", "array"],
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "classes que serao usadas para estilizar o componente."
+                  },
+                  "text": {
+                    "type": "string",
+                    "description": "Texto para coisas mais simples"
+                  },
+                  "tachyonsClasses": {
+                    "type": "string",
+                    "description": "Classes CSS extras que deseja adicionar.\nFeito para uso de classes do tachyons.\n Nao vai ser possivel usar essas classes para estilizar o componente.\nPara isso, use o props \"blockClass\""
+                  }
+                }
+              },
+              "children": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "patternProperties": {
+          "^html#": {
+            "type": "object",
+            "description": "The name of the entry",
+            "properties": {
+              "props": {
+                "properties": {
+                  "tag": {
+                    "enum": [
+                      "section",
+                      "div",
+                      "span",
+                      "p",
+                      "h1",
+                      "h2",
+                      "h3",
+                      "h4",
+                      "h5",
+                      "h6",
+                      "artigle",
+                      "aside",
+                      "details",
+                      "figcaption",
+                      "figure",
+                      "footer",
+                      "header",
+                      "main",
+                      "mark",
+                      "nav",
+                      "summary",
+                      "time",
+                      "wbr",
+                      "address",
+                      "blockquote",
+                      "dd",
+                      "dl",
+                      "dt",
+                      "fieldset",
+                      "hr",
+                      "li",
+                      "ol",
+                      "pre",
+                      "ul"
+                    ],
+                    "type": "string",
+                    "description": "Tag HTML que sera usada para renderizar o componente.",
+                    "default": "div"
+                  },
+                  "testId": {
+                    "type": "string",
+                    "description": "Id para ser usado nos testes automatizados"
+                  },
+                  "blockClass": {
+                    "type": ["string", "array"],
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "classes que serao usadas para estilizar o componente."
+                  },
+                  "text": {
+                    "type": "string",
+                    "description": "Texto para coisas mais simples"
+                  },
+                  "tachyonsClasses": {
+                    "type": "string",
+                    "description": "Classes CSS extras que deseja adicionar.\nFeito para uso de classes do tachyons.\n Nao vai ser possivel usar essas classes para estilizar o componente.\nPara isso, use o props \"blockClass\""
+                  }
+                }
+              },
+              "children": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

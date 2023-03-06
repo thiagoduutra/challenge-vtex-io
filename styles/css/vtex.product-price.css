@@ -1,0 +1,52 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Grid breakpoints */
+.savings {
+  display: none;
+}
+
+.installments {
+  color: #929292;
+}
+
+.listPrice {
+  font-family: "Opens Sans", sans-serif;
+  line-height: 19px;
+  color: #bababa;
+  font-size: 14px;
+}
+.listPrice .listPriceValue::before {
+  content: "de ";
+  font-size: 14px;
+}
+.listPrice .listPriceValue::after {
+  content: " por";
+  font-size: 14px;
+}
+
+.installments--divider {
+  font-family: "Open Sans", sans-serif;
+  line-height: 21px;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.sellingPriceValue {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+  color: #000;
+}
+
+.installmentValue {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}

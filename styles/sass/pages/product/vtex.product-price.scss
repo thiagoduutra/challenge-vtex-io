@@ -1,0 +1,44 @@
+.savings {
+  display: none;
+}
+.installments {
+  color: $color-gray6;
+}
+
+.listPrice {
+  font-family: "Opens Sans", sans-serif;
+  line-height: 19px;
+  color: $color-gray10;
+
+  font-size: 14px;
+  .listPriceValue {
+    &::before {
+      content: "de ";
+      font-size: 14px;
+    }
+    &::after {
+      content: " por";
+      font-size: 14px;
+    }
+  }
+}
+
+.installments--divider {
+  font-family: "Open Sans", sans-serif;
+  line-height: 21px;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.sellingPriceValue {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+  color: $color-black;
+}
+.installmentValue {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}

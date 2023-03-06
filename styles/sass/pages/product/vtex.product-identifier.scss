@@ -1,0 +1,15 @@
+.product-identifier {
+  @include mq(md, max) {
+    display: flex;
+  }
+}
+.product-identifier__label,
+.product-identifier__separator {
+  display: none;
+}
+
+.product-identifier__value {
+  display: flex;
+  justify-content: flex-end;
+  color: rgba(146, 146, 146, 0.478);
+}

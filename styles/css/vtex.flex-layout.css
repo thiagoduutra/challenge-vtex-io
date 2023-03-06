@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Grid breakpoints */
+.flexRowContent--container-main {
+  display: flex;
+  padding: 0;
+}
+@media only screen and (max-width: 1919px) {
+  .flexRowContent--container-main {
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .flexRowContent--container-main {
+    display: block;
+    padding: 0;
+  }
+}
+.flexRowContent--container-main :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  padding: 0;
+}
+@media only screen and (max-width: 1023px) {
+  .flexRowContent--container-main :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+  }
+}
+.flexRowContent--container-main :global(.vtex-flex-layout-0-x-stretchChildrenWidth) :global(.vtex-flex-layout-0-x-flexCol--description-main) {
+  margin-left: 32px;
+}
+@media only screen and (max-width: 1023px) {
+  .flexRowContent--container-main :global(.vtex-flex-layout-0-x-stretchChildrenWidth) :global(.vtex-flex-layout-0-x-flexCol--description-main) {
+    margin-left: 0;
+  }
+}
+.flexRowContent--container-main :global(.vtex-flex-layout-0-x-stretchChildrenWidth) :global(.vtex-button) {
+  background-color: #000;
+  border: none;
+}
+.flexRowContent--container-main :global(.vtex-flex-layout-0-x-stretchChildrenWidth) :global(.vtex-button) :global(.vtex-button__label) {
+  height: fit-content;
+}
+.flexRowContent--container-main :global(.vtex-flex-layout-0-x-stretchChildrenWidth) :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-add-to-cart-button-0-x-buttonDataContainer) {
+  font-size: 0;
+}
+.flexRowContent--container-main :global(.vtex-flex-layout-0-x-stretchChildrenWidth) :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-add-to-cart-button-0-x-buttonDataContainer)::after {
+  font-family: "Open sans", sans-serif;
+  content: "ADICIONAR À SACOLA";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.flexRow--container-price-slider {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1023px) {
+  .flexRowContent--product-description {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .flexRowContent--product-description :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .flexRow--product-description :global(.vtex-store-components-3-x-container) {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+.flexRow--container-newsletter {
+  margin-top: 64px;
+  width: 100%;
+  background-color: #000;
+}
+.flexRow--container-newsletter .flexRowContent--container-newsletter {
+  display: flex;
+  flex-direction: column;
+}
+.flexRow--container-newsletter .flexRowContent--container-newsletter .stretchChildrenWidth {
+  width: 100% !important;
+}
+.flexRow--container-newsletter .flexRowContent--container-newsletter .flexRowContent--text-newsletter {
+  display: flex;
+  flex-direction: column;
+}

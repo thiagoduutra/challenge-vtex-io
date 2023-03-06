@@ -1,0 +1,391 @@
+@charset "UTF-8";
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Grid breakpoints */
+@media only screen and (max-width: 1023px) {
+  .container {
+    padding: 0;
+    margin: 0 40px;
+  }
+}
+.container .productBrand {
+  display: flex;
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 1023px) {
+  .container .productBrand {
+    justify-content: flex-start;
+  }
+}
+.container .productBrand--quickview {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 34px;
+  margin-top: 0px;
+  color: #575757;
+}
+.container .skuSelectorContainer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.container .skuSelectorContainer .skuSelectorName {
+  font-size: 0;
+}
+.container .skuSelectorContainer .skuSelectorNameSeparator {
+  font-size: 0;
+}
+.container .skuSelectorContainer .skuSelectorSubcontainer--cor::before {
+  content: "OUTRAS CORES:";
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 19px;
+  font-size: 14px;
+  color: #929292;
+}
+.container .skuSelectorContainer .skuSelectorSubcontainer--tamanho::before {
+  content: "OUTROS TAMANHOS:";
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 19px;
+  font-size: 14px;
+  color: #929292;
+}
+.container .skuSelectorContainer .skuSelectorTextContainer {
+  display: none;
+}
+.container .skuSelectorContainer .skuSelectorOptionsList {
+  margin-top: 8px;
+  margin-left: 0;
+}
+.container .skuSelectorContainer .skuSelectorSelectorImageValue {
+  font-size: 0;
+}
+.container .skuSelectorOptionsList .skuSelectorItem {
+  width: 40px;
+  height: 40px;
+}
+.container .skuSelectorOptionsList .skuSelectorItem--selected {
+  color: #000;
+}
+.container .skuSelectorOptionsList .frameAround {
+  border-radius: 50%;
+  border-color: #000;
+  margin: 3px;
+}
+.container .skuSelectorOptionsList .skuSelectorItemTextValue {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #000;
+}
+.container .skuSelectorOptionsList .diagonalCross {
+  margin: 4px;
+  background-image: linear-gradient(to top left, transparent 44%, rgba(0, 0, 0, 0.3) 48%, currentColor 48%, currentColor 52%, transparent 52%);
+}
+.container .skuSelectorOptionsList .skuSelectorInternalBox {
+  border-radius: 50%;
+}
+.container .skuSelectorOptionsList .skuSelectorInternalBox .valueWrapper {
+  color: #000;
+}
+@media only screen and (max-width: 767px) {
+  .container .carouselGaleryThumbs {
+    display: block;
+  }
+}
+.container .carouselGaleryThumbs .thumbImg {
+  border-radius: 8px;
+  width: 90px;
+  height: 90px;
+}
+.container .carouselGaleryThumbs .productImagesThumb {
+  height: 100% !important;
+  width: 90px !important;
+  margin-right: 16px;
+}
+.container .carouselGaleryThumbs .productImagesThumbCaret {
+  display: none;
+}
+.container .subscriberContainer .title {
+  font-size: 0;
+}
+.container .subscriberContainer .title::before {
+  content: "Produto indisponível";
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #868686;
+  line-height: 19px;
+}
+.container .subscriberContainer .subscribeLabel {
+  font-size: 0;
+}
+.container .subscriberContainer .subscribeLabel::before {
+  content: "Deseja saber quanto estiver disponível?";
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #868686;
+  line-height: 19px;
+}
+.container .form {
+  position: relative;
+}
+.container .form :global(.vtex-store-components-3-x-content) {
+  max-width: 100%;
+}
+.container .form :global(.vtex-store-components-3-x-content) :global(.vtex-store-components-3-x-submit) :global(.vtex-button) {
+  width: 100%;
+  background-color: #000;
+  border: 0;
+}
+.container .form :global(.vtex-store-components-3-x-content) :global(.vtex-store-components-3-x-submit) :global(.vtex-button) :global(.vtex-button__label) {
+  font-size: 0;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+.container .form :global(.vtex-store-components-3-x-content) :global(.vtex-store-components-3-x-submit) :global(.vtex-button) :global(.vtex-button__label)::before {
+  content: "AVISE-ME";
+  font-family: "Open sans", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 24px;
+}
+.container .form .content .inputEmail {
+  margin-right: 0;
+}
+.container .form .content .submit {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+.container .productImage .productImageTag--main {
+  max-height: 100% !important;
+}
+.container .productDescriptionContainer {
+  color: #929292;
+}
+.container .productDescriptionContainer .productDescriptionTitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0px 0 8px 40px;
+}
+@media only screen and (max-width: 1023px) {
+  .container .productDescriptionContainer .productDescriptionTitle {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+}
+.container .productDescriptionContainer .productDescriptionText {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.container .productDescriptionContainer .productDescriptionText .content {
+  margin-left: 40px;
+}
+@media only screen and (max-width: 1023px) {
+  .container .productDescriptionContainer .productDescriptionText .content {
+    margin-left: 0;
+  }
+}
+
+.shippingContainer {
+  display: flex;
+}
+@media only screen and (max-width: 767px) {
+  .shippingContainer {
+    display: block;
+    position: relative;
+  }
+}
+.shippingContainer :global(.vtex-address-form__postalCode) {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-top: 16px;
+}
+@media only screen and (max-width: 767px) {
+  .shippingContainer :global(.vtex-address-form__postalCode) {
+    display: block;
+  }
+}
+.shippingContainer :global(.vtex-address-form__postalCode) :global(.vtex-input__label) {
+  font-size: 0;
+}
+.shippingContainer :global(.vtex-address-form__postalCode) :global(.vtex-input__label)::before {
+  content: "CALCULAR FRETE";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #929292;
+}
+.shippingContainer :global(.vtex-address-form__postalCode) :global(.vtex-input-prefix__group) {
+  width: 280px;
+  height: 49px;
+  border-radius: 0;
+}
+@media only screen and (max-width: 767px) {
+  .shippingContainer :global(.vtex-address-form__postalCode) :global(.vtex-input-prefix__group) {
+    width: 100%;
+  }
+}
+.shippingContainer :global(.vtex-address-form__postalCode) :global(.vtex-address-form__postalCode-forgottenURL) {
+  padding: 0;
+  margin-top: 25px;
+  position: relative;
+  left: 32px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 767px) {
+  .shippingContainer :global(.vtex-address-form__postalCode) :global(.vtex-address-form__postalCode-forgottenURL) {
+    left: 0;
+    margin-top: 8px;
+    text-align: end;
+  }
+}
+.shippingContainer :global(.vtex-address-form__postalCode) :global(.vtex-address-form__postalCode-forgottenURL) :last-child {
+  color: #000;
+}
+.shippingContainer :global(.vtex-address-form__postalCode) :global(.vtex-address-form__postalCode-forgottenURL) :global(.vtex__icon-external-link) {
+  display: none;
+}
+.shippingContainer :global(.vtex-button) {
+  height: 49px;
+  width: 49px;
+  margin-top: 27px;
+  position: relative;
+  right: 130px;
+  top: 16px;
+  font-size: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+@media only screen and (max-width: 767px) {
+  .shippingContainer :global(.vtex-button) {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+}
+.shippingContainer :global(.vtex-button)::before {
+  content: "OK";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.shippingTable {
+  border: none;
+  padding: 0;
+  margin: 15px 0;
+}
+.shippingTable .shippingTableHead {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.shippingTable .shippingTableHead .shippingTableRow {
+  display: flex;
+  flex-direction: row;
+}
+.shippingTable .shippingTableHead .shippingTableRow .shippingTableHeadDeliveryName {
+  margin-right: 39px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000;
+}
+@media only screen and (max-width: 767px) {
+  .shippingTable .shippingTableHead .shippingTableRow .shippingTableHeadDeliveryName {
+    margin-right: 32px;
+  }
+}
+.shippingTable .shippingTableHead .shippingTableRow .shippingTableHeadDeliveryEstimate {
+  display: flex;
+  order: 1;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000;
+}
+.shippingTable .shippingTableHead .shippingTableRow .shippingTableHeadDeliveryPrice {
+  font-size: 0;
+  margin-right: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .shippingTable .shippingTableHead .shippingTableRow .shippingTableHeadDeliveryPrice {
+    margin-right: 32px;
+  }
+}
+.shippingTable .shippingTableHead .shippingTableRow .shippingTableHeadDeliveryPrice::before {
+  content: "Frete";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000;
+}
+
+.shippingTableBody .shippingTableRow {
+  display: flex;
+  flex-direction: row;
+}
+.shippingTableBody .shippingTableRow .shippingTableCellDeliveryName {
+  width: 82px;
+  margin-right: 28px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #bababa;
+}
+@media only screen and (max-width: 767px) {
+  .shippingTableBody .shippingTableRow .shippingTableCellDeliveryName {
+    margin-right: 22px;
+  }
+}
+.shippingTableBody .shippingTableRow .shippingTableCellDeliveryEstimate {
+  display: flex;
+  order: 1;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #bababa;
+}
+.shippingTableBody .shippingTableRow .shippingTableCellDeliveryPrice {
+  width: 50px;
+  margin-right: 28px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #bababa;
+}
+.shippingTableBody .shippingTableRow .shippingTableCell {
+  padding: 0 0 15px;
+}
+.shippingTableBody .shippingTableRow .shippingTableCell .shippingTableLabel .shippingTableRadioBtn {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .imageElement {
+    width: 100%;
+  }
+}

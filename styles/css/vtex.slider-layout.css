@@ -1,0 +1,26 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Grid breakpoints */
+.sliderLayoutContainer {
+  padding: 0 67px 36px 67px;
+}
+.sliderLayoutContainer .slide--carousel {
+  margin-right: 16px;
+}
+.sliderLayoutContainer .paginationDotsContainer .paginationDot--isActive {
+  background-color: #000;
+}
+
+.sliderRightArrow {
+  margin-right: 25px;
+}
+
+.sliderLeftArrow {
+  margin-left: 25px;
+}

@@ -1,0 +1,10 @@
+{
+    "html#breadcrumb": {
+    "props": {
+      "tag": "section",
+      "testId": "breadcrumbs",
+      "blockClass": "pdp-breadcrumb"
+    },
+    "children": ["breadcrumb"]
+  }
+}

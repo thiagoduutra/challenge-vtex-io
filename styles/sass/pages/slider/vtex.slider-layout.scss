@@ -1,0 +1,19 @@
+.sliderLayoutContainer {
+  padding: 0 67px 36px 67px;
+  .slide--carousel {
+    margin-right: 16px;
+  }
+  .paginationDotsContainer {
+    .paginationDot--isActive {
+      background-color: $color-black;
+    }
+  }
+}
+
+.sliderRightArrow {
+  margin-right: 25px;
+}
+
+.sliderLeftArrow {
+  margin-left: 25px;
+}

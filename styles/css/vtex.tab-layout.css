@@ -1,0 +1,53 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Grid breakpoints */
+.container {
+  margin: 0 40px;
+}
+.container .listContainer {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #bababa;
+}
+@media only screen and (max-width: 1023px) {
+  .container .listContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container .listContainer .listItem {
+  margin: 0;
+  padding: 0;
+}
+.container .listContainer .listItem :global(.vtex-button) {
+  background-color: transparent;
+  border: none;
+  color: #bfbfbf;
+}
+.container .listContainer .listItem :global(.vtex-button) :global(.vtex-button__label) {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 38px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 1023px) {
+  .container .listContainer .listItem :global(.vtex-button) :global(.vtex-button__label) {
+    padding-left: 0;
+  }
+}
+.container .listContainer .listItem :global(.vtex-button) :global(.vtex-button__label):hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+@media only screen and (max-width: 1023px) {
+  .container .listContainer .listItem :global(.vtex-button) :global(.vtex-button__label):hover {
+    border: 0 !important;
+  }
+}

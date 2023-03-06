@@ -1,0 +1,106 @@
+{
+  "html#image-home": {
+    "props": {
+      "tag": "div",
+      "testId": "product-images",
+      "blockClass": "image-home"
+    },
+    "children": ["html#image-description"]
+  },
+
+  "html#product-description": {
+    "props": {
+      "testId": "product-description"
+    },
+    "children": ["tab-layout#home"]
+  },
+
+  "tab-layout#home": {
+    "children": ["tab-list#home", "tab-content#home"],
+    "props": {
+      "blockClass": "home",
+      "defaultActiveTabId": "descricao1"
+    }
+  },
+
+  "tab-list#home": {
+    "children": [
+      "tab-list.item#descricao1",
+      "tab-list.item#descricao2",
+      "tab-list.item#descricao3",
+      "tab-list.item#descricao4",
+      "tab-list.item#descricao5"
+    ]
+  },
+
+  "tab-list.item#descricao1": {
+    "props": {
+      "tabId": "descricao1",
+      "label": "Descrição",
+      "defaultActiveTab": true
+    }
+  },
+
+  "tab-list.item#descricao2": {
+    "props": {
+      "tabId": "descricao2",
+      "label": "Descrição"
+    }
+  },
+
+  "tab-list.item#descricao3": {
+    "props": {
+      "tabId": "descricao3",
+      "label": "Descrição"
+    }
+  },
+
+  "tab-list.item#descricao4": {
+    "props": {
+      "tabId": "descricao4",
+      "label": "Descrição"
+    }
+  },
+
+  "tab-list.item#descricao5": {
+    "props": {
+      "tabId": "descricao5",
+      "label": "Descrição"
+    }
+  },
+
+  "tab-content#home": {
+    "children": [
+      "tab-content.item#descricao1",
+      "tab-content.item#descricao2",
+      "tab-content.item#descricao3",
+      "tab-content.item#descricao4",
+      "tab-content.item#descricao5"
+    ]
+  },
+
+  "tab-content.item#descricao1": {
+    "children": ["html#container-description"],
+    "props": { "tabId": "descricao1" }
+  },
+
+  "tab-content.item#descricao2": {
+    "children": ["html#container-description"],
+    "props": { "tabId": "descricao2" }
+  },
+
+  "tab-content.item#descricao3": {
+    "children": ["html#container-description"],
+    "props": { "tabId": "descricao3" }
+  },
+
+  "tab-content.item#descricao4": {
+    "children": ["html#container-description"],
+    "props": { "tabId": "descricao4" }
+  },
+
+  "tab-content.item#descricao5": {
+    "children": ["html#container-description"],
+    "props": { "tabId": "descricao5" }
+  }
+}
