@@ -1,6 +1,6 @@
 ## Desafio M3 Academy - VTEX IO 
 
-![preview](<../docs/react/components/Imgs/desafio06.png>)
+![preview](<../react/components/Imgs/desafio06.png>)
 
 ## Descrição
 
